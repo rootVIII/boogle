@@ -84,7 +84,7 @@ Each section will have a list of dictionaries in order from newest to oldest.
             "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-apple-earnings-fed-rate-hike-headline-huge-market-week-what-to-do-now/",
             "image_link": "Failed to find og:image"
         }
-    ],S
+    ],
     "Technology": [
         {
             "title": "Pixel 6a teardown reveals easier battery removal and plastic back [Video]",
