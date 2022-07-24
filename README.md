@@ -9,7 +9,7 @@ are scraped. All results are output to a text file as serialized JSON.
 This script is great if you need to add news to your webapp (with OG preview images).
 
 Tested with Chrome v103; provide absolute or relative path to the chromedriver binary
-(I prefer to keep it in the CWD/project root).
+(I prefer to keep it in project root).
 
 Example usage:
 <pre>
@@ -30,7 +30,7 @@ Each section will have a list of dictionaries in order from newest to oldest.
 
 <pre>
     <code>
-# Extremely Shortened example:
+# Extremely Shortened example (there will typically be hundreds of articles):
 {
     "US": [
         {
