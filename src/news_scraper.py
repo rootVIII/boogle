@@ -11,7 +11,7 @@ from selenium.webdriver.common.by import By
 class NewsScraper:
     def __init__(self, chromedriver_path, headless=False):
         chrome_options = ChromeOptions()
-        chrome_options.add_argument('--log-level=0')
+        chrome_options.add_argument('--log-level=3')
 
         if headless:
             chrome_options.add_argument('--headless')
