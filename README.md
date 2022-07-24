@@ -6,7 +6,9 @@
 Retrieves Google News links using Selenium Webdriver. Each article's link, title, and OG Image
 are scraped. All results are output to a text file as serialized JSON.
 
-This script is great if you need to add a news feed to your webapp/website with OG preview images.
+This script can help if you need to add a news-feed to your webapp/website with OG preview images.
+
+The script takes 10-15 minutes or so to execute.
 
 Tested with Chrome v103; provide absolute or relative path to the chromedriver binary
 (I prefer to keep it in project root).
@@ -35,137 +37,137 @@ Each section will have a list of dictionaries in order from newest to oldest.
     "US": [
         {
             "title": "Suspected attacker of GOP Rep. Lee Zeldin arrested on federal assault charge",
-            "link": "https://news.google.com/articles/CBMiY2h0dHBzOi8vd3d3LmNubi5jb20vMjAyMi8wNy8yMy9wb2xpdGljcy96ZWxkaW4tc3VzcGVjdGVkLWF0dGFja2VyLWZlZGVyYWwtYXNzYXVsdC1jaGFyZ2UvaW5kZXguaHRtbNIBZ2h0dHBzOi8vYW1wLmNubi5jb20vY25uLzIwMjIvMDcvMjMvcG9saXRpY3MvemVsZGluLXN1c3BlY3RlZC1hdHRhY2tlci1mZWRlcmFsLWFzc2F1bHQtY2hhcmdlL2luZGV4Lmh0bWw?hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+            "link": "https://www.cnn.com/2022/07/23/politics/zeldin-suspected-attacker-federal-assault-charge/index.html",
+            "image_link": "https://cdn.cnn.com/cnnnext/dam/assets/220723143634-zeldin-suspected-attacker-federal-assault-charge-super-tease.jpg"
         },
         {
-            "title": "Lee Zeldin attack suspect arrested on federal assault charge",
-            "link": "https://news.google.com/articles/CAIiEKCr8RKbYDpYiqoebBCOaiAqGQgEKhAIACoHCAowwL2ICzCckocDMMaPqQY?uo=CAUiVWh0dHBzOi8vd3d3LmZveG5ld3MuY29tL3BvbGl0aWNzL2xlZS16ZWxkaW4tYXR0YWNrLXN1c3BlY3QtaGl0LWZlZGVyYWwtYXNzYXVsdC1jaGFyZ2XSAQA&hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/4pEYXUr42ktGAJvwboyRsDd-rZmaXQTkmX9Y4Ku5M3MyGH1dbJOIzZzFGJ12lvgGc8TyJMBkYsITqIoBUuk=rj-w512-h512-pf"
+            "title": "Lee Zeldin's attempted attacker told investigators he 'did not know' speaker's identity",
+            "link": "https://www.foxnews.com/politics/lee-zeldins-attempted-attacker-told-investigators-did-not-know-speakers-identity",
+            "image_link": "https://static.foxnews.com/foxnews.com/content/uploads/2022/07/Untitled-design-386.png"
         },
         {
-            "title": "Pilot seriously injured in small plane crash near San Jose's Reid-Hillview Airport",
-            "link": "https://news.google.com/articles/CCAiC3dKek1GSmd6SjlNmAEB?hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+            "title": "Trump and Pence duel in Arizona in fight for Republican future",
+            "link": "https://www.theguardian.com/us-news/2022/jul/23/trump-pence-arizona-republicans-future-election",
+            "image_link": "https://i.guim.co.uk/img/media/65cc0647a34bd7790694a05c744125cae92cb7e5/0_177_3600_2160/master/3600.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=356248d83efc8378529f31895e92fff9"
         }
     ],
     "World": [
         {
             "title": "Russian missiles hit Ukraine port; Kyiv says it is still preparing grain exports",
-            "link": "https://news.google.com/articles/CBMiaWh0dHBzOi8vd3d3LnJldXRlcnMuY29tL3dvcmxkL2V1cm9wZS91cy1wbGVkZ2VzLW1vcmUtbWlsaXRhcnktYWlkLXVrcmFpbmUtcGVhY2Utc2VlbXMtZmFyLW9mZi0yMDIyLTA3LTIyL9IBAA?hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+            "link": "https://www.reuters.com/world/europe/us-pledges-more-military-aid-ukraine-peace-seems-far-off-2022-07-22/",
+            "image_link": "https://www.reuters.com/resizer/P_aXjIifEPVoqbUlM7hN2D0pEUk=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/C6PWX34P4NMVFOHQ6K6SAPHHGE.jpg"
         },
         {
             "title": "Russian missiles strike Odesa one day after grain export deal agreed",
-            "link": "https://news.google.com/articles/CBMiX2h0dHBzOi8vd3d3LmNubi5jb20vMjAyMi8wNy8yMy9ldXJvcGUvcnVzc2lhLXVrcmFpbmUtb2Rlc2Etc3RyaWtlLWdyYWluLWV4cG9ydHMtaW50bC9pbmRleC5odG1s0gFjaHR0cHM6Ly9hbXAuY25uLmNvbS9jbm4vMjAyMi8wNy8yMy9ldXJvcGUvcnVzc2lhLXVrcmFpbmUtb2Rlc2Etc3RyaWtlLWdyYWluLWV4cG9ydHMtaW50bC9pbmRleC5odG1s?hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+            "link": "https://www.cnn.com/2022/07/23/europe/russia-ukraine-odesa-strike-grain-exports-intl/index.html",
+            "image_link": "https://media.cnn.com/api/v1/images/stellar/prod/220723112237-02-odesa-missile-strike-0723.jpg?c=16x9&q=w_800,c_fill"
         },
         {
-            "title": "Damascus air base, Iranian warehouse said hit in alleged Israeli strikes",
-            "link": "https://news.google.com/articles/CBMicGh0dHBzOi8vd3d3LnRpbWVzb2Zpc3JhZWwuY29tL2RhbWFzY3VzLWFpci1iYXNlLWlyYW5pYW4td2FyZWhvdXNlLXNhaWQtaGl0LWluLWFsbGVnZWQtaXNyYWVsaS1zdHJpa2VzLW92ZXJuaWdodC_SAXRodHRwczovL3d3dy50aW1lc29maXNyYWVsLmNvbS9kYW1hc2N1cy1haXItYmFzZS1pcmFuaWFuLXdhcmVob3VzZS1zYWlkLWhpdC1pbi1hbGxlZ2VkLWlzcmFlbGktc3RyaWtlcy1vdmVybmlnaHQvYW1wLw?hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+            "title": "Russian tank attack in eastern Ukraine kills 2 Americans, Canadian and Swede",
+            "link": "https://www.politico.com/news/2022/07/23/americans-killed-russian-tank-attack-00047567",
+            "image_link": "https://static.politico.com/03/f9/e46d5daa41e1beb268e88fdbc30e/https-delivery.gettyimages.com/downloads/1239284532"
         }
     ],
     "Business": [
         {
             "title": "'Ruffling feathers': How VW fell out of love with Herbert Diess",
-            "link": "https://news.google.com/articles/CAIiEPbA3AzxiVMNmjLxxuwTMEYqGAgEKg8IACoHCAow-4fWBzD4z0gw_fCpBg?uo=CAUiP2h0dHBzOi8vd3d3LmZ0LmNvbS9jb250ZW50L2RlMzg1OGYyLTEyNGMtNDc4YS04ZmFkLTg1NDAxMzVhNDI5NtIBAA&hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/MgdbXy28m7SBis1XkBT2HZA8rlekakSGEh3ZKS5A74_pKB5i0OPv-LOv4Ww8Yo38I-bwI8J3ln7U08UY6A=rj-w512-h512-pf"
+            "link": "https://www.ft.com/content/de3858f2-124c-478a-8fad-8540135a4296",
+            "image_link": "Failed to find og:image"
         },
         {
-            "title": "JPMorgan's Michele Says Bonds Have Recession 'Priced In'",
-            "link": "https://news.google.com/articles/CAIiEG4cw78QqT8sWDx22mofcbYqGQgEKhAIACoHCAow4uzwCjCF3bsCMIrOrwM?uo=CAUiaWh0dHBzOi8vd3d3LmJsb29tYmVyZy5jb20vbmV3cy9hcnRpY2xlcy8yMDIyLTA3LTIzL2pwbW9yZ2FuLXMtbWljaGVsZS1zYXlzLWJvbmRzLWhhdmUtcmVjZXNzaW9uLXByaWNlZC1pbtIBAA&hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/L-vg-zfNDdJaisw2o_BGJVAgPz0Z1vBq26fy-UDDN-idngSpUVktjfpqxWWxqyWSsdNbZ3O4Lfnp0mxFXoA=rj-w512-h512-pf"
+            "title": "Why Did VW CEO Herbert Diess Get Fired?",
+            "link": "https://www.bloomberg.com/tosv2.html?vid=&uuid=5b191b77-0b0b-11ed-96b9-674b78554664&url=L25ld3MvYXJ0aWNsZXMvMjAyMi0wNy0yMy92dy1zLWJpbGxpb25haXJlLWNsYW4tcGxvdHRlZC1jZW8tb3VzdGVyLXdoaWxlLWhlLXdhcy1vbi11cy10cmlw",
+            "image_link": "Failed to find og:image"
         },
         {
-            "title": "U.S. housing affordability poised to fall to lowest since GFC on soaring prices, rates",
-            "link": "https://news.google.com/articles/CAIiEL_vXuNibpbvjdHFCEvX0IsqFggEKg0IACoGCAowkqEGMJBZMMTouwY?uo=CAUieWh0dHBzOi8vc2Vla2luZ2FscGhhLmNvbS9uZXdzLzM4NTk3NTQtdXMtaG91c2luZy1hZmZvcmRhYmlsaXR5LXBvaXNlZC10by1mYWxsLXRvLWxvd2VzdC1zaW5jZS1nZmMtb24tc29hcmluZy1wcmljZXMtcmF0ZXPSAQA&hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/2A9_np-zzhkr_UmtF6q-d-NG3YFZhiYMzZpyIzgm13f8xTvavO63t4kCTbzq8NC2RyWynzrL3E7UHY_NpRJL=rj-w512-h512-pf"
+            "title": "Dow Jones Futures: Apple Leads Earnings Wave, Fed Rate Hike Looms; What To Do Now | Investor's Business Daily",
+            "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-apple-earnings-fed-rate-hike-headline-huge-market-week-what-to-do-now/",
+            "image_link": "Failed to find og:image"
         }
     ],
     "Technology": [
         {
-            "title": "Preorder Google's Pixel 6A and get a free set of Pixel Buds A-Series earbuds",
-            "link": "https://news.google.com/articles/CAIiEJZ7lp5DVWN_4e5zGdQdTL8qFwgEKg4IACoGCAow3O8nMMqOBjCkztQD?uo=CAUijAFodHRwczovL3d3dy50aGV2ZXJnZS5jb20vZ29vZC1kZWFscy8yMDIyLzcvMjMvMjMyNzM5MzkvZ29vZ2xlLXBpeGVsLTZhLWJ1ZHMtcHJvLWEtc2VyaWVzLW5pbnRlbmRvLXN3aXRjaC1saXRlLWxlbm92by1nYW1pbmctbGFwdG9wLWRlYWwtc2FsZdIBAA&hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/jWgoOLT4dcvYUm9LKVaLsBOKeh3C0V07ptarOwXpBE9orLUBtCvUPK37EZvW6l5FIy10wqcwbdepQl5PZVQ=rj-w512-h512-pf"
+            "title": "Pixel 6a teardown reveals easier battery removal and plastic back [Video]",
+            "link": "https://9to5google.com/2022/07/23/pixel-6a-teardown/",
+            "image_link": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2022/07/Pixel-6a-teardown-cover.jpg?resize=1200%2C628&#038;quality=82&#038;strip=all&#038;ssl=1"
         },
         {
-            "title": "Pixel 6a Review: Value-packed, Tensor-powered, and just in time for Pixel 3a upgrades",
-            "link": "https://news.google.com/articles/CAIiELSloigPgHSaEcwQM3v51QUqGQgEKhAIACoHCAowyoD5CjD5z-ACMM_rvwU?uo=CAUiANIBAA&hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/ZRA2q5_IkzSRsbLulooiJZvAlIHBkwXP1zTaVFAZcV1Lye8lmGqKh-RCdLXXPYl9gugpuT4h0ORXLZfgLA=rj-w512-h512-pf"
+            "title": "Google Pixel 6a \u2014 5 reasons to buy and 3 reasons to skip",
+            "link": "https://www.tomsguide.com/opinion/google-pixel-6a-reasons-to-buy-and-skip",
+            "image_link": "https://cdn.mos.cms.futurecdn.net/FiGh35zHHWDJ6atcwXBPiE-1200-80.jpg"
         },
         {
-            "title": "iPhone 13 camera before iPhone 14 launch: Apple and Android keep failing to make real camera phones",
-            "link": "https://news.google.com/articles/CBMiiwFodHRwczovL3d3dy5waG9uZWFyZW5hLmNvbS9uZXdzL2lwaG9uZS0xMy1jYW1lcmEtYmVmb3JlLWlwaG9uZS0xNC1sYXVuY2gtYXBwbGUtYW5kLWFuZHJvaWQta2VlcC1mYWlsaW5nLXRvLW1ha2UtcmVhbC1jYW1lcmEtcGhvbmVzX2lkMTQxNDE50gEA?hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+            "title": "[Let's Talk] Live A Live Switch remake impressions",
+            "link": "https://nintendoeverything.com/lets-talk-live-a-live-switch-remake-impressions/",
+            "image_link": "https://nintendoeverything.com/wp-content/uploads/live-a-live-impressions-lets-talk.jpg"
         }
     ],
     "Entertainment": [
         {
-            "title": "Star Trek teases Picard cast and Strange New Worlds crossover",
-            "link": "https://news.google.com/articles/CAIiENQ5A2DcIcz8jita-pMfwIQqFwgEKg4IACoGCAow3O8nMMqOBjCzr7gD?uo=CAUiiwFodHRwczovL3d3dy50aGV2ZXJnZS5jb20vMjAyMi83LzIzLzIzMjc1NDQ0L3N0YXItdHJlay1waWNhcmQtY2FzdC1zdHJhbmdlLW5ldy13b3JsZC1jcm9zc292ZXItdHJhaWxlci10ZWFzZXItcGFyYW1vdW50LXBsdXMtcGF0cmljay1zdGV3YXJ00gEA&hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/UbQAZlUZvtL0r-qoeUX-uyrLwlq2A4G08xmN6HcqWUfjYXSmezMYEf80Lm0cDLDEyWkq_OLIHmJSEo7N2-Kr=rj-w512-h512-pf"
-        },
-        {
             "title": "Ben Affleck Appears to Take a Nap on Boat Ride During Post-Wedding Trip With Jennifer Lopez",
-            "link": "https://news.google.com/articles/CAIiEOfeMhcjGFVLqNywaooBReAqGQgEKhAIACoHCAowq_7zCjCt4tQCMPa0pwY?uo=CAUiANIBAA&hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/eFpTNxOtwzAtmXYsuB6p2GhhKK7L2wk7_ykA_0kiNbuFuMiZxd3ogzN2h8VMyDXh1kLc-FMQ6PhONuxXObsT=rj-w512-h512-pf"
+            "link": "https://www.eonline.com/news/1339217/ben-affleck-appears-to-take-a-nap-on-boat-ride-during-post-wedding-trip-with-jennifer-lopez",
+            "image_link": "Failed to find og:image"
         },
         {
-            "title": "Zac Efron returns to the school where he filmed hit High School Musical series",
-            "link": "https://news.google.com/articles/CAIiEDk9SpCKbqfm_6DnpDaLAHgqGQgEKhAIACoHCAowzuOICzCZ4ocDMNTCoAY?uo=CAUiANIBAA&hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/WLvIShgfOhVMTmaFSfZqcNhzyxWpZjWZ6i2SBH8ukbrWKLSIH5xfL2T14lWwLpqPGMtD384m1l4-HQ7JXiA=rj-w512-h512-pf"
+            "title": "Jennifer Lopez Paired a $2290 Dress with $55 Flip Flops for a PDA-Packed Paris Park Date with Ben Affleck",
+            "link": "https://people.com/fashion/jennifer-lopez-white-flip-flops-paris/",
+            "image_link": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&rect=1%2C97%2C1000%2C597&poi=face&w=1000&h=500&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2022%2F02%2F09%2FBen-and-Jen.jpg"
+        },
+        {
+            "title": "Marvel outlines Phase 6 with Fantastic Four and two new Avengers movies",
+            "link": "https://www.theverge.com/2022/7/23/23275861/marvel-phase-6-fantastic-four-avengers-sdcc",
+            "image_link": "https://cdn.vox-cdn.com/thumbor/CQhYjIXZnlFxsN-ONAfpYQ2xsDY=/0x715:3000x2286/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23895974/FYZK4nLVEAEK0hU.jpg"
         }
     ],
     "Sports": [
         {
-            "title": "Curtis Blaydes Octagon Interview | UFC London",
-            "link": "https://news.google.com/articles/CCAiCzZYajVjYnV2WkFNmAEB?hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+            "title": "Sydney McLaughlin shatters 400 hurdles record with 50.68",
+            "link": "https://www.foxnews.com/sports/sydney-mclaughlin-shatters-400-hurdles-record-50-68",
+            "image_link": "https://static.foxnews.com/foxnews.com/content/uploads/2022/07/AP22204119679839.jpg"
         },
         {
-            "title": "What time does UFC London start for UK fans and what\u2019s the fight order?",
-            "link": "https://news.google.com/articles/CAIiEJs_toOlsOy1Ad3cwhLyuRUqGQgEKhAIACoHCAow8KiRCzCh9qUDMI2c1gY?uo=CAUibGh0dHBzOi8vd3d3LmhpdGMuY29tL2VuLWdiLzIwMjIvMDcvMjMvd2hhdC10aW1lLWRvZXMtdWZjLWxvbmRvbi1zdGFydC1mb3ItdWstZmFucy1hbmQtd2hhdHMtdGhlLWZpZ2h0LW9yZGVyL9IBAA&hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/3IRXilz-DhN2B7q51GOsP3Hd5tEUbwm5Xn3ct8PU8DTwPNOJ_tmUKWER0mWfjzWFjKBmvsnfw0GXd76ZtkU=rj-w512-h512-pf"
+            "title": "Sydney McLaughlin OBLITERATES her own WORLD RECORD for 400 hurdles World Title | NBC Sports",
+            "link": "https://www.youtube.com/watch?v=cIlpFhU3P-M",
+            "image_link": "https://i.ytimg.com/vi/cIlpFhU3P-M/hqdefault.jpg"
         },
         {
-            "title": "Colorado Springs thrower Kara Winger earns first javelin medal for U.S. at world championships",
-            "link": "https://news.google.com/articles/CBMiqgFodHRwczovL2dhemV0dGUuY29tL3Nwb3J0cy9jb2xvcmFkby1zcHJpbmdzLXRocm93ZXIta2FyYS13aW5nZXItZWFybnMtZmlyc3QtamF2ZWxpbi1tZWRhbC1mb3ItdS1zLWF0LXdvcmxkLWNoYW1waW9uc2hpcHMvYXJ0aWNsZV8zZDYzZTU4Mi0wYWEzLTExZWQtOWJhZC05N2IyMDRjY2M5OWEuaHRtbNIBrgFodHRwczovL2dhemV0dGUuY29tL3Nwb3J0cy9jb2xvcmFkby1zcHJpbmdzLXRocm93ZXIta2FyYS13aW5nZXItZWFybnMtZmlyc3QtamF2ZWxpbi1tZWRhbC1mb3ItdS1zLWF0LXdvcmxkLWNoYW1waW9uc2hpcHMvYXJ0aWNsZV8zZDYzZTU4Mi0wYWEzLTExZWQtOWJhZC05N2IyMDRjY2M5OWEuYW1wLmh0bWw?hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+            "title": "Latest On Juan Soto Trade Talks",
+            "link": "https://www.mlbtraderumors.com/2022/07/latest-on-juan-soto-trade-talks.html",
+            "image_link": "https://cdn.mlbtraderumors.com/files/2022/06/juan-soto-nationals-washington-1024x727.jpg"
         }
     ],
     "Science": [
         {
             "title": "Watch a SpaceX Falcon 9 rocket soar over the moon in incredible tracking cam video",
-            "link": "https://news.google.com/articles/CAIiEIbvlv5pWdaVDnfijSqI9KIqMwgEKioIACIQiaYKTaVj4jekEifjHCx8jCoUCAoiEImmCk2lY-I3pBIn4xwsfIww37rKBg?uo=CAUiQmh0dHBzOi8vd3d3LnNwYWNlLmNvbS9zcGFjZXgtZmFsY29uLTktbW9vbi1mb290YWdlLXN0YXJsaW5rLWxhdW5jaNIBAA&hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/HO2appXsHjcpL7TVCo57YBlB3FjbouVkrZamFj5ehsUtZz2LVN9d14Uzq8LLaRiYPgp5RBKePpEGeq6cALw0=rj-w512-h512-pf"
+            "link": "https://www.space.com/spacex-falcon-9-moon-footage-starlink-launch",
+            "image_link": "https://cdn.mos.cms.futurecdn.net/7fxHx3iNcg9A6j3PG7vVJo-1200-80.jpg"
         },
         {
-            "title": "Laser Marking on Mars - NASA Mars",
-            "link": "https://news.google.com/articles/CBMiSGh0dHBzOi8vbWFycy5uYXNhLmdvdi9tYXJzMjAyMC9taXNzaW9uL3N0YXR1cy8zOTMvbGFzZXItbWFya2luZy1vbi1tYXJzL9IBAA?hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+            "title": "SpaceX breaks own record with 32nd launch of 2022",
+            "link": "https://www.youtube.com/watch?v=JKx1ASLlIDk",
+            "image_link": "https://i.ytimg.com/vi/JKx1ASLlIDk/maxresdefault.jpg"
         },
         {
-            "title": "Rocket Report: A heavy-lift rocket funded by crypto; Falcon 9 damaged in transport",
-            "link": "https://news.google.com/articles/CBMieWh0dHBzOi8vYXJzdGVjaG5pY2EuY29tL3NjaWVuY2UvMjAyMi8wNy9yb2NrZXQtcmVwb3J0LWEtaGVhdnktbGlmdC1yb2NrZXQtZnVuZGVkLWJ5LWNyeXB0by1mYWxjb24tOS1kYW1hZ2VkLWluLXRyYW5zcG9ydC_SAX9odHRwczovL2Fyc3RlY2huaWNhLmNvbS9zY2llbmNlLzIwMjIvMDcvcm9ja2V0LXJlcG9ydC1hLWhlYXZ5LWxpZnQtcm9ja2V0LWZ1bmRlZC1ieS1jcnlwdG8tZmFsY29uLTktZGFtYWdlZC1pbi10cmFuc3BvcnQvP2FtcD0x?hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+            "title": "Dazzling James Webb Space Telescope image prompts science scramble",
+            "link": "https://www.space.com/james-webb-space-telescope-deep-field-science",
+            "image_link": "https://cdn.mos.cms.futurecdn.net/cMDRA3454bGvfZASbxviZe-1200-80.jpg"
         }
     ],
     "Health": [
         {
-            "title": "WHO Declares Monkeypox a Global Health Emergency",
-            "link": "https://news.google.com/articles/CAIiEJgUhIQ9PkQuzuSdNObiHqcqGAgEKg8IACoHCAow1tzJATDnyxUwxMrPBg?uo=CAUiANIBAA&hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/7ZuQlaytBtlkaBkhWEv9GeZhll3A6Mq16Dkeo8qkCrMX_jq5awnrKm9lKQ0RIxbF3DO-8zhiQMcA9Z7H_Q=rj-w512-h512-pf"
+            "title": "Monkeypox officially becomes a global emergency",
+            "link": "https://www.cbsnews.com/news/monkeypox-global-health-emergency/",
+            "image_link": "https://assets3.cbsnewsstatic.com/hub/i/r/2022/07/20/31035150-da8f-4298-a915-54f39cc09a1a/thumbnail/1200x630/8a46aa48cc13e27b6081e0dd7a7a89f1/pox.jpg"
         },
         {
-            "title": "Monkeypox: What to Know About Vaccines, Tests and Treatment",
-            "link": "https://news.google.com/articles/CAIiEEBSTvIrx_ZLPsbd2jW4f6AqFwgEKg8IACoHCAowjuuKAzCWrzwwt4QY?uo=CAUiTWh0dHBzOi8vd3d3Lm55dGltZXMuY29tLzIwMjIvMDcvMjEvd2VsbC9saXZlL21vbmtleXBveC12YWNjaW5lLXRyZWF0bWVudC5odG1s0gEA&hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/l0yDgf7l3yXgF_ju38UlnTWObsZ8gaOeY81aS57h9rpad71QifHZovC9tSPiWhGcJgWQSZupQlp7ogmGrg=rj-w512-h512-pf"
+            "title": "WHO declares monkeypox a public health emergency of international concern",
+            "link": "https://www.cnn.com/2022/07/23/health/monkeypox-who-intl/index.html",
+            "image_link": "https://media.cnn.com/api/v1/images/stellar/prod/220714153026-monkeypox-questions-update.jpg?c=16x9&q=w_800,c_fill"
         },
         {
-            "title": "Self-Reflection Linked to Improved Late-Life Cognition and Brain Health",
-            "link": "https://news.google.com/articles/CAIiEM5ZQJ9rfz8bFMO23QEGJrEqGQgEKhAIACoHCAow_e2PCzDGtqMDMNbzsAY?uo=CAUiQ2h0dHBzOi8vbmV1cm9zY2llbmNlbmV3cy5jb20vc2VsZi1yZWZsZWN0aW9uLWFnaW5nLWNvZ25pdGlvbi0yMTA5OS_SAQA&hl=en-US&gl=US&ceid=US%3Aen",
-            "image_link": "https://lh3.googleusercontent.com/-9QLYdmWUpj3iTBIWZYdBQ9oLNuCrwlPlMLh39xsmp2-crz5MdxUEYHp2b6cRXHmbMNz9b_4XqIuQgqg3g=rj-w512-h512-pf"
+            "title": "Polio live oral vaccine: Here's why the US stopped using it years ago",
+            "link": "https://nypost.com/2022/07/23/polio-live-oral-vaccine-heres-why-the-us-stopped-using-it-years-ago/",
+            "image_link": "https://nypost.com/wp-content/uploads/sites/2/2022/07/AFGHANISTAN_HEALTH_POLIO_VACCINAT_ION-e1658611818205.jpeg?quality=75&#038;strip=all&#038;w=1024"
         }
     ]
 }
