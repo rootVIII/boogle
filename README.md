@@ -14,7 +14,7 @@ Tested with Chrome v103; provide absolute or relative path to the chromedriver b
 Example usage:
 <pre>
     <code>
-# Run with Chrome browser
+# Run with visible browser
 python boogle.py -p chromedriver.exe
 
 # Run headless in terminal only:
