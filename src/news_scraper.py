@@ -10,9 +10,6 @@ from selenium.webdriver.common.by import By
 
 class NewsScraper:
     def __init__(self, chromedriver_path, headless=False):
-        self.ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X x.y; ' \
-                  'rv:42.0) Gecko/20100101 Firefox/42.0'
-
         chrome_options = ChromeOptions()
         chrome_options.add_argument('--log-level=0')
 
@@ -22,7 +19,6 @@ class NewsScraper:
             chrome_options.add_argument('--window-size=1920,1080')
             chrome_options.add_argument('--no-sandbox')
             chrome_options.add_argument('--disable-dev-shm-usage')
-            chrome_options.add_argument(f'user-agent={self.ua}')
 
         self.browser = Chrome(chromedriver_path, options=chrome_options)
         self.browser.set_page_load_timeout(30)
@@ -76,7 +72,7 @@ class NewsScraper:
         for section, article_details in self.articles.items():
             for index, article in enumerate(article_details):
                 try:
-                    req = get(article['link'], headers={'User-Agent': self.ua})
+                    req = get(article['link'], allow_redirects=True)
                     # Get the actual URL and replace Google's 302 redirect URL
                     self.articles[section][index]['link'] = req.url
                     self.articles[section][index]['image_link'] = self.scrape_og_img(req.text)
