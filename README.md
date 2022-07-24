@@ -6,7 +6,7 @@
 Retrieves Google News links using Selenium Webdriver. Each article's link, title, and OG Image
 are scraped. All results are output to a text file as serialized JSON.
 
-This script is great if you need to add news to your webapp (with OG preview images).
+This script is great if you need to add a news feed to your webapp/website with OG preview images.
 
 Tested with Chrome v103; provide absolute or relative path to the chromedriver binary
 (I prefer to keep it in project root).
