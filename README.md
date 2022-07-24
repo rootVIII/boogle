@@ -8,7 +8,7 @@ are scraped. All results are output to a text file as serialized JSON.
 
 This script can help if you need to add a news-feed to your webapp/website with OG preview images.
 
-The script will take some time to execute.
+The script will take some time to execute - usuall between 10 & 20 minutes.
 
 Tested with Chrome v103; provide absolute or relative path to the chromedriver binary
 (I prefer to keep it in project root).
