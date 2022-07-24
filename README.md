@@ -32,7 +32,7 @@ Each section will have a list of dictionaries in order from newest to oldest.
 
 <pre>
     <code>
-# Extremely Shortened example (there will typically be hundreds of articles):
+# Extremely shortened example (there will typically be hundreds of articles):
 {
     "US": [
         {
