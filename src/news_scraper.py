@@ -72,7 +72,7 @@ class NewsScraper:
         for section, article_details in self.articles.items():
             for index, article in enumerate(article_details):
                 try:
-                    req = get(article['link'], timeout=120, allow_redirects=True)
+                    req = get(article['link'], timeout=30, allow_redirects=True)
                     # Get the actual URL and replace Google's 302 redirect URL
                     self.articles[section][index]['link'] = req.url
                     self.articles[section][index]['image_link'] = self.scrape_og_img(req.text)
