@@ -1,0 +1,4 @@
+venv
+chromedriver*
+__pycache__
+result*
